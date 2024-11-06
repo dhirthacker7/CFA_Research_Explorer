@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  fastapi:
+    build:
+      context: ./fastapi  # Correct context for FastAPI
+      dockerfile: Dockerfile
+    container_name: fastapi-container
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    networks:
+      - my-network
+
+  streamlit:
+    build:
+      context: ./streamlit  # Correct context for Streamlit
+      dockerfile: Dockerfile
+    container_name: streamlit-container
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge
