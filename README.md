@@ -1,4 +1,4 @@
-# CFA Research Explorer
+# CFA_Research_Explorer
 
 Interactive Research Platform for CFA Research Publications
 
