@@ -1,4 +1,4 @@
-# Multimodal_RAG_Query_Engine
+# CFA Research Explorer
 
 Interactive Research Platform for CFA Research Publications
 
